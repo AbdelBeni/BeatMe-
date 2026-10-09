@@ -1,6 +1,6 @@
 <div align="center">
 
-<div>
+<div display='flex'>
 <img src="./screenshots/logo.png" alt="BeatMe Logo" width="50" />
 
 # BeatMe
