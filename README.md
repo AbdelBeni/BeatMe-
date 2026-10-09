@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./screenshots/logo.png" alt="BeatMe Logo" width="180" />
+<img src="./screenshots/logo.png" alt="BeatMe Logo" width="50" />
 
 # BeatMe
 
