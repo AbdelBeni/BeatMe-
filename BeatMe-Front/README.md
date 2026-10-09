@@ -13,7 +13,7 @@
 
 ---
 
-## 📖 Overview
+## Overview
 
 The BeatMe web application is the **public face** of the platform. It serves:
 
