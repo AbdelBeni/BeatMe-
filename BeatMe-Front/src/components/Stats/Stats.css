@@ -1,0 +1,31 @@
+
+.stats { 
+    flex: 1;
+    align-items: center;
+    gap: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.stats__item { display: flex; 
+    flex-direction: column; 
+    gap: 4px;
+}
+.stats__item:first-child { 
+    padding-left: 0; 
+}
+.stats__item strong { 
+    font-size: 1.300rem;
+    font-weight: 650;
+}
+.stats__item span { 
+    font-size: .8125rem;
+    color: #898d94;
+}
+.inBettwenStats {
+    display: flex;
+    background: #898d9426;
+    width: 1.5px;
+    height: 35px;
+}

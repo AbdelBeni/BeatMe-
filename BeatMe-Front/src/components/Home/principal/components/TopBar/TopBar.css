@@ -1,0 +1,149 @@
+.topBar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.First-Section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.regionWrapper {
+    position: relative;
+}
+
+.regionSelect {
+    width: 214.834px;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border: 1px solid rgb(53 57 64 / 98%);
+    border-radius: 9px;
+    background: rgb(53 57 64 / 50%);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    font-family: inherit;
+    padding: 10px 15px;
+    gap: calc(.25rem * 2);
+}
+
+.regionSelect > svg:first-child {
+    color: #ffffff;
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+.selectedCode {
+    font-size: 11px;
+    color: #d4d4d4;
+    font-weight: 500;
+    margin-right: 10px;
+    position: relative;
+}
+
+.selectedName {
+    font-size: 13px;
+    color: #ffffff;
+    flex: 1;
+    text-align: left;
+}
+
+.chevron {
+    color: #a5a9b1;
+    transition: transform 0.2s ease;
+}
+
+.chevron.open {
+    transform: rotate(180deg);
+}
+
+/* Dropdown */
+
+.regionDropdown {
+    position: absolute;
+    z-index: 100;
+    top: calc(100% + 8px);
+    left: 0;
+    width: 100%;
+    padding: 6px;
+    background: rgb(53 57 64 / 50%);
+    border: 1px solid rgb(53 57 64 / 98%);
+    border-radius: 9px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.regionOption {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 12px;
+    border: 0;
+    border-radius: 6px;
+    background: transparent;
+    cursor: pointer;
+    font-family: inherit;
+    text-align: left;
+    color: #333;
+}
+
+.regionOption:hover {
+    background: #f5003d;
+}
+
+.regionOption.active {
+    color: white;
+}
+
+.flag {
+    color: #ffffff;
+    width: 25px;
+    font-size: 19px;
+    text-align: left;
+    position: relative;
+    top: -3px;
+}
+
+.optionCode {
+    font-size: 11px;
+    color: #d4d4d4;
+    font-weight: 500;
+}
+
+.optionName {
+    font-size: 13px;
+    color: #ffffff;
+    flex: 1;
+}
+
+.check {
+    flex-shrink: 0;
+}
+
+.PlayersCount {
+    color: #777;
+    font-size: 14px;
+}
+
+.topBar {
+    gap: 10px;
+}
+
+/* Second Section */
+
+.search {
+    padding: 0px 10px;
+}
+
+@media (max-width: 597px) {
+    .Second-Section {
+        width: 100%;
+    }
+}

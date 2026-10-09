@@ -1,0 +1,218 @@
+.player-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  color: #fff;
+}
+
+.player-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 32px;
+  background: linear-gradient(135deg, #1a1a1a 0%, #222 100%);
+  border-radius: 16px;
+  border: 1px solid #2a2a2a;
+  margin-bottom: 24px;
+}
+
+.player-avatar-large img,
+.avatar-placeholder-large {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ff2b47;
+}
+
+.avatar-placeholder-large {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #333;
+  font-size: 48px;
+  font-weight: 700;
+  color: #ff2b47;
+}
+
+.player-info {
+  flex: 1;
+}
+
+.player-info h1 {
+  font-size: 32px;
+  margin: 0 0 8px;
+  font-weight: 700;
+}
+
+.valorant-id {
+  font-size: 16px;
+  color: #999;
+  margin: 0 0 4px;
+  font-family: monospace;
+}
+
+.player-region {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+.player-rank {
+  text-align: center;
+  padding: 16px 24px;
+  background: #111;
+  border-radius: 12px;
+  border: 1px solid #2a2a2a;
+}
+
+.rank-label {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+}
+
+.rank-value {
+  font-size: 36px;
+  font-weight: 800;
+  color: #ff2b47;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.stat-card {
+  padding: 20px;
+  background: #1a1a1a;
+  border-radius: 12px;
+  border: 1px solid #2a2a2a;
+}
+
+.stat-label {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.stat-value {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.stat-value small {
+  font-size: 14px;
+  color: #666;
+  font-weight: 400;
+}
+
+.stat-card--rating .stat-value {
+  color: #ff2b47;
+}
+
+.stat-card--wins .stat-value {
+  color: #00e5a0;
+}
+
+.stat-card--losses .stat-value {
+  color: #666;
+}
+
+.stat-tier-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.stat-value-small {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.matches-section h2 {
+  font-size: 20px;
+  margin-bottom: 16px;
+  color: #ccc;
+}
+
+.no-matches {
+  color: #666;
+  font-style: italic;
+}
+
+.matches-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.match-row {
+  display: grid;
+  grid-template-columns: 80px 1fr 100px 120px;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  background: #1a1a1a;
+  border-radius: 10px;
+  border-left: 4px solid #2a2a2a;
+}
+
+.match-row--won {
+  border-left-color: #00e5a0;
+}
+
+.match-row--lost {
+  border-left-color: #ff2b47;
+}
+
+.match-result {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.match-row--won .match-result {
+  color: #00e5a0;
+}
+
+.match-row--lost .match-result {
+  color: #ff2b47;
+}
+
+.match-opponent {
+  color: #ccc;
+  font-size: 14px;
+}
+
+.match-opponent a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.match-opponent a:hover {
+  color: #ff2b47;
+}
+
+.match-points {
+  font-family: monospace;
+  font-size: 14px;
+  color: #999;
+  text-align: right;
+}
+
+.match-date {
+  font-size: 13px;
+  color: #666;
+  text-align: right;
+}

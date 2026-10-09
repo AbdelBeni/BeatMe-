@@ -1,0 +1,50 @@
+:root {
+  --bg: #111117;
+  --nav-bg: #14141b;
+  --surface: #1f1f28;
+  --surface-hover: #2a2a35;
+  --text: #ffffff;
+  --text-muted: #a6a6b3;
+  --brand: #ff0a54;
+  --brand-2: #ff2f6d;
+  --gold: #f5b93b;
+  --gold-bg: #3a2f1f;
+  --hero-top: #3b0c1c;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: var(--bg); color: var(--text); font-family: var(--font-inter), system-ui, sans-serif; }
+button, input { font: inherit; color: inherit; border: 0; background: none; }
+button { cursor: pointer; }
+a { color: inherit; text-decoration: none; }
+
+main {
+  justify-content: center;
+     --c: 
+color-mix(in hsl, hsl(345deg 100% 48% / 99%) 20%, transparent);
+    background: radial-gradient(50% 50% at 100% -0%, var(--c) 0%, #24131b00 100%), radial-gradient(50% 50% at 0% 0%, var(--c) 0%, #24131b00 100%);
+    opacity: 1;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: 100% 480px;
+    width: 100%;
+    transition: opacity 3s ease-out;
+    padding: 0 100px 0 100px;
+    overflow-x: hidden;
+}
+@media (max-width: 800px) {
+  main {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 700px) {
+  main {
+    padding-right: 20px;
+  }
+}
+@media (max-width: 361px) {
+  main {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}

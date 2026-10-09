@@ -1,0 +1,230 @@
+.valorant-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 22px;
+  background: rgba(5, 7, 10, 0.85);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.valorant-modal {
+  width: min(520px, calc(100vw - 44px));
+  background: #0d0f14;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 30px 100px rgba(0, 0, 0, 0.65);
+  animation: valorant-modal-in 0.18s ease-out;
+}
+
+@keyframes valorant-modal-in {
+  from {
+    opacity: 0;
+    transform: translateY(-8px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.valorant-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.valorant-modal__header h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #e5e6e9;
+}
+
+.valorant-modal__close {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  color: #8d9199;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: color 0.15s, background 0.15s;
+}
+
+.valorant-modal__close:hover:not(:disabled) {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.valorant-modal__close:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.valorant-modal__body {
+  padding: 24px;
+}
+
+.valorant-modal__description {
+  margin: 0 0 20px;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: #8b9099;
+}
+
+.valorant-modal__fields {
+  display: flex;
+  gap: 12px;
+}
+
+.valorant-modal__field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.valorant-modal__field--tag {
+  max-width: 130px;
+}
+
+.valorant-modal__field label {
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #8b9099;
+}
+
+.valorant-modal__field input {
+  width: 100%;
+  height: 42px;
+  padding: 0 12px;
+  background: #1a1d23;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 8px;
+  color: #e5e6e9;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.valorant-modal__field input:focus {
+  border-color: #0fc4c1;
+  background: #1d2028;
+}
+
+.valorant-modal__field input:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.tag-input-wrapper {
+  display: flex;
+  align-items: center;
+  background: #1a1d23;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 8px;
+  transition: border-color 0.15s, background 0.15s;
+  padding-left: 12px;
+}
+
+.tag-input-wrapper:focus-within {
+  border-color: #0fc4c1;
+  background: #1d2028;
+}
+
+.tag-hash {
+  color: #6b7280;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.tag-input-wrapper input {
+  border: none;
+  background: transparent;
+  padding-left: 4px;
+}
+
+.tag-input-wrapper input:focus {
+  background: transparent;
+}
+
+.valorant-modal__error {
+  margin-top: 16px;
+  padding: 10px 14px;
+  background: rgba(255, 22, 68, 0.1);
+  border: 1px solid rgba(255, 22, 68, 0.25);
+  border-radius: 8px;
+  color: #ff5a78;
+  font-size: 13px;
+}
+
+.valorant-modal__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.valorant-modal__btn {
+  height: 40px;
+  padding: 0 18px;
+  border-radius: 8px;
+  font-size: 13.5px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: background 0.15s, opacity 0.15s;
+}
+
+.valorant-modal__btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.valorant-modal__btn--ghost {
+  background: transparent;
+  color: #9da1aa;
+}
+
+.valorant-modal__btn--ghost:hover:not(:disabled) {
+  color: #e5e6e9;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.valorant-modal__btn--primary {
+  background: #ff1644;
+  color: #fff;
+}
+
+.valorant-modal__btn--primary:hover:not(:disabled) {
+  background: #e9143d;
+}
+
+.spin {
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

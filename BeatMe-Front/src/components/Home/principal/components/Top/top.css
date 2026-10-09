@@ -1,0 +1,139 @@
+.TopPlayers {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+.w-full {
+    width: 100%;
+}
+table {
+    text-indent: 0;
+    border-color: inherit;
+    border-collapse: collapse;
+}
+thead {
+    border-bottom: 1px solid #e5e7eb;
+    background-color: rgb(53 57 64 / 50%);
+    text-transform: uppercase;
+    text-align: left;
+}
+td, th {
+    padding-block: calc(.25rem * 3);
+    padding-inline: calc(.25rem * 4);
+    letter-spacing: .05rem;
+    font-size: .75rem;
+    line-height: var(--tw-leading, calc(1 / .75));
+}
+
+tbody tr {
+    border-bottom: 1px solid #e5e7eb36;
+    border-top: 1px solid #e5e7eb36;
+    background-color: rgb(53 57 64 / 20%);
+}
+
+.rank-col {
+    width: 8%;
+}
+
+.player-col {
+    width: 48%;
+}
+
+.tier-col {
+    width: 16%;
+}
+
+.rating-col {
+    width: 16%;
+}
+
+.wins-col {
+    width: 12%;
+}
+
+.User-Info {
+    display: flex;
+    flex-direction: row;
+    gap: calc(.25rem * 3);
+}
+.Profile-Picture img {
+    width: calc(.25rem * 9);
+    height: calc(.25rem * 9);
+    border-radius: .375rem;
+}
+.User-Name {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+.Valorant-UserName {
+    color: #ffffff8a;
+}
+.Discord-UserName {
+    font-weight: 700;
+}
+.Tier-Icon svg {
+    width: calc(.25rem * 7);
+    height: calc(.25rem * 7);
+}
+.Player-Rating {
+    font-size: 17px;
+    font-family: fantasy;
+    color: #ff4655;
+}
+.PR-icon {
+    color: #ffffff8a;
+    font-size: 10.5px;
+    margin-left: 0.25rem;
+}
+.ALL-Wins {
+    font-size: 16px;
+    font-family: fantasy;
+    color: #00d4aa;
+}
+.Td-Right {
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    th,
+    td {
+        padding: 12px;
+    }
+
+    .player-col {
+        width: 40%;
+    }
+
+    .rank-col {
+        width: 10%;
+    }
+
+    .tier-col {
+        width: 16%;
+    }
+
+    .rating-col {
+        width: 18%;
+    }
+
+    .wins-col {
+        width: 16%;
+    }
+}
+
+@media (max-width: 500px) {
+    .TopPlayers th:nth-child(3),
+    .TopPlayers td:nth-child(3) {
+        display: none;
+    }
+    .player-col {
+        width: 64%;
+    }
+    .PR-COl {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}

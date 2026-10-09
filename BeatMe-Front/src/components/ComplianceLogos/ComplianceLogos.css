@@ -1,0 +1,19 @@
+.compliance { 
+  display: grid;
+  padding-left: 40px; 
+}
+.compliance__logos { display: flex; 
+  align-items: center;
+  gap: .75rem;
+  height: 40px; 
+}
+.compliance__label {
+  color: #898d94;
+  font-size: .8125rem;
+  font-weight: 500;
+}
+
+.OurLogo-Compliance {
+  position: relative;
+  left: -6px;
+}

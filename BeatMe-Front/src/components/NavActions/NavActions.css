@@ -1,0 +1,164 @@
+.nav-actions { 
+  display: flex; 
+  gap: 8px;
+}
+.nav-actions__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 36px;
+    padding: 0 8px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: filter .15s, background .15s;
+    transition: outline-color .15s ease-out, color .15s ease-out, background .15s ease-out;
+    outline: 2px solid #0000;
+    outline-offset: 3px;
+}
+.nav-actions__btn--gold { 
+  background: var(--gold-bg); 
+  color: var(--gold); 
+}
+.nav-actions__btn--dark, .nav-actions__btn--icon { 
+  background: var(--surface); 
+  color: var(--text-muted); 
+}
+.nav-actions__btn--icon { 
+  width: max-content;
+}
+.nav-actions__btn--brand { 
+  background: var(--brand); 
+  color: #fff; 
+  transition: outline-color .15s ease-out, color .15s ease-out, background .15s ease-out;
+  outline: 2px solid #0000;
+  outline-offset: 3px;
+}
+
+.nav-actions__btn:hover { 
+  filter: brightness(1.1); 
+  outline-color: #ebecf040;
+}
+
+.nav-actions__btn--brand:hover { 
+  filter: brightness(1.1); 
+  outline-color: color-mix(in hsl, #f5003d 50%, transparent);
+}
+.nav-actions__btn--gold:hover {
+  outline-color: color-mix(in hsl, #ffc562 25%, transparent);
+}
+
+
+.clsh7 {
+  font-weight: 500;
+  color: #ffffffa1;
+  transition: .2s ease-in-out;
+  border-radius: 8px;
+  font-size: 13px;
+  text-align: left;
+  padding: 8px;
+}
+.clsh7:hover {
+  background-color: #222222;
+}
+
+.account-wrapper {
+  position: relative;
+}
+
+.nav-avatar {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.account-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  width: max-content;
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 10px;
+  padding: 12px;
+  z-index: 100;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.dropDown-content {
+  display: grid;
+  justify-content: left;
+  align-items: flex-end;
+  gap: 3px;
+  margin-bottom: 6px;
+}
+
+.account-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.account-name {
+  font-weight: 600;
+  color: #fff;
+}
+
+.account-entre {
+
+}
+
+.DropDown-gold {
+  font-size: 12px;
+  gap: 70px;
+}
+
+.account-rating {
+  color: #ff2b47;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.account-stats {
+  font-size: 13px;
+  color: #999;
+  margin-bottom: 8px;
+}
+
+.account-dropdown hr {
+  border: none;
+  border-top: 1px solid #2a2a2a;
+  margin: 8px 0;
+}
+
+.Hr-second {
+  margin-bottom: 3px;
+}
+
+.account-logout {
+    background: #3a1f1f;
+    color: #f53b3b;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    height: 36px;
+    padding: 0 8px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: filter .15s, background .15s;
+    transition: outline-color .15s ease-out, color .15s ease-out, background .15s ease-out;
+    outline: 2px solid #0000;
+    outline-offset: 3px;
+}
+
+.account-logout:hover {
+  background: #4c2626;
+  color: #f53b3b;
+}

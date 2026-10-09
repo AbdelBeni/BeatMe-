@@ -1,0 +1,36 @@
+.Pagination-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    height: max-content;
+}
+
+.Pagination-PerNumber {
+    color: #ffffff8a;
+    font-size: 13px;
+}
+
+.css-2xahf8-MuiButtonBase-root-MuiPaginationItem-root {
+    background-color: rgba(53, 57, 64, 0.5) !important;
+    color: white !important;
+}
+.css-btxnvc-MuiPaginationItem-root {
+    color: white !important;
+}
+.css-2xahf8-MuiButtonBase-root-MuiPaginationItem-root:hover {
+    background-color: rgba(53, 57, 64, 0.856) !important;
+}
+
+.css-2xahf8-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+    background-color: #f5003d !important;
+}
+
+@media (max-width: 478px) {
+    .css-btxnvc-MuiPaginationItem-root {
+        display: none;
+    }
+    .Last-Page-Number {
+        display: none;
+    }
+}

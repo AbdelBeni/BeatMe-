@@ -1,0 +1,99 @@
+/* scroll down Animation */
+.scroll-down {
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+
+  animation: float 2s ease-in-out infinite;
+}
+
+/* Mouse icon */
+.scroll-down__mouse {
+  width: 24px;
+  height: 38px;
+
+  border: 2px solid currentColor;
+  border-radius: 14px;
+
+  display: flex;
+  justify-content: center;
+  padding-top: 7px;
+}
+
+.scroll-down__wheel {
+  width: 3px;
+  height: 7px;
+  border-radius: 3px;
+  background: currentColor;
+
+  animation: wheel 1.5s ease-in-out infinite;
+}
+
+.scroll-down__text {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.scroll-down__arrow {
+  font-size: 20px;
+  line-height: 1;
+
+  animation: arrow 1.5s ease-in-out infinite;
+}
+
+/* حركة العنصر بالكامل */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+
+  50% {
+    transform: translateX(-50%) translateY(6px);
+  }
+}
+
+/* حركة العجلة داخل الماوس */
+@keyframes wheel {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateY(7px);
+    opacity: 0.3;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* حركة السهم */
+@keyframes arrow {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+
+  50% {
+    transform: translateY(5px);
+    opacity: 1;
+  }
+}
+
+/* /scroll down Animation */

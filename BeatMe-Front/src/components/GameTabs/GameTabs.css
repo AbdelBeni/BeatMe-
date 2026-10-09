@@ -1,0 +1,33 @@
+.game-tabs {
+  background: #0e1015;
+  width: 100%;
+  box-shadow: inset 0 -1px var(--border-color);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.NavMessage {
+  display: flex;
+  flex-shrink: 0;
+  animation: scroll 15s linear infinite;
+}
+
+.NavMessage span {
+  color: #ebecf08c;
+  width: 100vw;
+  flex-shrink: 0;
+  text-align: left;
+  padding: 0 0.75rem;
+  white-space: nowrap;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(-100vw);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,83 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id              Int      @id @default(autoincrement())
+  discordId       String   @unique
+  discordUsername String
+  discordAvatar   String?
+  
+  // Valorant account (optional until linked)
+  riotPuuid       String?  @unique
+  riotGameName    String?
+  riotTagLine     String?
+  riotTier        String?
+  riotTierIcon    String?
+  riotRegion      String?  // EU, NA, KR, etc.
+  
+  // Game stats
+  rating          Int      @default(0)
+  wins            Int      @default(0)
+  losses          Int      @default(0)
+  region          String   @default("EU") // منطقة الموقع للفلترة
+  
+  // Relations
+  matchesAsPlayer1 Match[]  @relation("Player1Matches")
+  matchesAsPlayer2 Match[]  @relation("Player2Matches")
+  matchesWon       Match[]  @relation("WonMatches")
+  pointHistory     PointHistory[]
+  
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  
+  @@index([rating(sort: Desc)])
+  @@index([region, rating(sort: Desc)])
+}
+
+model Match {
+  id              Int       @id @default(autoincrement())
+  status          String    @default("pending") // pending, active, completed, cancelled, disputed
+  
+  player1Id       Int
+  player2Id       Int
+  winnerId        Int?
+  
+  player1         User      @relation("Player1Matches", fields: [player1Id], references: [id])
+  player2         User      @relation("Player2Matches", fields: [player2Id], references: [id])
+  winner          User?     @relation("WonMatches", fields: [winnerId], references: [id])
+  
+  // Discord context
+  discordChannelId String?
+  discordMessageId String?
+  refereeDiscordId String?
+  
+  // Points
+  pointsDelta     Int?      // مقدار التغيير (موجب للفائز، سالب للخاسر)
+  
+  createdAt       DateTime  @default(now())
+  completedAt     DateTime?
+  
+  @@index([player1Id])
+  @@index([player2Id])
+  @@index([status])
+}
+
+model PointHistory {
+  id        Int      @id @default(autoincrement())
+  userId    Int
+  matchId   Int?
+  delta     Int      // التغيير (موجب أو سالب)
+  reason    String   // "match_win", "match_loss", "admin_adjustment", etc.
+  
+  user      User     @relation(fields: [userId], references: [id])
+  
+  createdAt DateTime @default(now())
+  
+  @@index([userId])
+}
