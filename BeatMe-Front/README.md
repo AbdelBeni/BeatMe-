@@ -32,21 +32,21 @@ All data is **read from the same PostgreSQL database** used by the Discord bot.
 <table>
   <tr>
     <td width="50%">
-      <img src="../assets/screenshots/leaderboard.png" alt="Leaderboard" />
+      <img src="./screenshots/Top-players.png" alt="Leaderboard" />
       <p align="center"><b>Global Leaderboard</b></p>
     </td>
     <td width="50%">
-      <img src="../assets/screenshots/player-profile.png" alt="Player Profile" />
+      <img src="./screenshots/user-profile.png" alt="Player Profile" />
       <p align="center"><b>Player Profile Page</b></p>
     </td>
   </tr>
   <tr>
     <td width="50%">
-      <img src="../assets/screenshots/account-modal.png" alt="Account Modal" />
+      <img src="./screenshots/account-settings-modal.png" alt="Account Modal" />
       <p align="center"><b>Account Modal</b></p>
     </td>
     <td width="50%">
-      <img src="../assets/screenshots/valorant-link.png" alt="Valorant Linking" />
+      <img src="./screenshots/Link-valorant-account.png" alt="Valorant Linking" />
       <p align="center"><b>Link Valorant Account</b></p>
     </td>
   </tr>
