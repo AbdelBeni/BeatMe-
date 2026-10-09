@@ -81,7 +81,7 @@ The platform replaces manual matchmaking chaos with a structured, anti-cheat sys
 <table>
   <tr>
     <td width="50%">
-      <img src="../screenshots/play-command.png" alt="Play Command" />
+      <img src="./screenshots/play-command.png" alt="Play Command" />
       <p align="center"><b>/play — Challenge a player</b></p>
     </td>
     <td width="50%">
@@ -308,7 +308,7 @@ Max 2 matches vs the same opponent per day
 Challenges auto-expire after 5 minutes
 ```
 
-📁 Project Structure
+Project Structure
 ```
 text
 BeatMe/
@@ -370,7 +370,7 @@ Open a Pull Request
 License
 No open-source license is specified in this README.
 
-👤 Author
+Author:
 Abdo — Full-Stack Developer
 
 GitHub: @AbdelBeni
