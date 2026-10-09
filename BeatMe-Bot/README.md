@@ -13,7 +13,7 @@
 
 ---
 
-## 📖 Overview
+## Overview
 
 The BeatMe bot is the **matchmaking engine** for your Discord community. It handles:
 
@@ -81,7 +81,7 @@ Both commands redirect users to the website to drive traffic and keep Discord li
 
 ---
 
-## 🎮 Commands
+## Commands
 
 ### `/play opponent:@user`
 
@@ -117,7 +117,7 @@ Displays an embed with a **button linking to the global leaderboard** on the web
 
 ---
 
-## 🏆 Elo Rating System
+## Elo Rating System
 
 BeatMe uses a **dynamic K-factor** approach inspired by FIDE chess ratings, adapted for a growing community:
 
