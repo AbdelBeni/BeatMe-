@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎨 BeatMe — Web Application
+# BeatMe — Web Application
 
 **Public leaderboard, player profiles & account management for BeatMe**
 
@@ -27,7 +27,7 @@ All data is **read from the same PostgreSQL database** used by the Discord bot.
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 <table>
   <tr>
