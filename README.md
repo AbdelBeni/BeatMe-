@@ -1,7 +1,7 @@
 <div align="center">
 
-<table border="0"> <tr> <td align="right" valign="middle"> <img src="./screenshots/logo.png" alt="BeatMe Logo" width="50" /> </td> <td align="left" valign="middle"> <h1>BeatMe</h1> </td> </tr> </table>
-### Competitive Valorant Matchmaking for Discord Communities
+<table> <tr> <td align="right" valign="middle"> <img src="./screenshots/logo.png" alt="BeatMe Logo" width="50" /> </td> <td align="left" valign="middle"> <h1>BeatMe</h1> </td> </tr> </table>
+## Competitive Valorant Matchmaking for Discord Communities
 
 **Challenge. Compete. Climb.**
 
