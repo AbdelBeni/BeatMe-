@@ -1,12 +1,6 @@
 <div align="center">
 
-<div align="center">
-  <div style="display: flex; align-items: center; justify-content: center; gap: 10px;">
-    <img src="./screenshots/logo.png" alt="BeatMe Logo" width="50" />
-    <h1>BeatMe</h1>
-  </div>
-</div>
-
+<table> <tr> <td align="right" valign="middle"> <img src="./screenshots/logo.png" alt="BeatMe Logo" width="50" /> </td> <td align="left" valign="middle"> <h1>BeatMe</h1> </td> </tr> </table>
 ### Competitive Valorant Matchmaking for Discord Communities
 
 **Challenge. Compete. Climb.**
