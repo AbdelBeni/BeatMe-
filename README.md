@@ -1,9 +1,10 @@
 <div align="center">
 
-<div display='flex'>
-<img src="./screenshots/logo.png" alt="BeatMe Logo" width="50" />
-
-# BeatMe
+<div align="center">
+  <div style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+    <img src="./screenshots/logo.png" alt="BeatMe Logo" width="50" />
+    <h1>BeatMe</h1>
+  </div>
 </div>
 
 ### Competitive Valorant Matchmaking for Discord Communities
