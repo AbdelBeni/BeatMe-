@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🤖 BeatMe — Discord Bot
+#  BeatMe — Discord Bot
 
 **Competitive matchmaking, Elo engine & refereeing system**
 
