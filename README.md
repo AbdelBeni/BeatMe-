@@ -1,8 +1,10 @@
 <div align="center">
 
+<div>
 <img src="./screenshots/logo.png" alt="BeatMe Logo" width="50" />
 
 # BeatMe
+</div>
 
 ### Competitive Valorant Matchmaking for Discord Communities
 
